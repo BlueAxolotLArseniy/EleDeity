@@ -1,0 +1,13 @@
+import game.func_common as func_common
+
+WINDOW_PROPORTIONS = 16 / 9
+WINDOW_SCALE = 0.5
+
+WIDTH = func_common.get_screen_resolution()[0] * WINDOW_SCALE
+HEIGHT = WIDTH / WINDOW_PROPORTIONS
+
+PROGRAM_TITLE = "EleDeity"
+
+PLAYER_MOVEMENT_SPEED = 6
+GRAVITY = -1
+PLAYER_MOVEMENT_SLOWDOWN = 0.95
