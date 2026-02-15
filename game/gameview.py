@@ -11,7 +11,8 @@ class GameView(arcade.Window):
             consts.WIDTH,
             consts.HEIGHT,
             consts.PROGRAM_TITLE,
-            center_window=True
+            center_window=True,
+            fullscreen=True
         )
 
         self.player = player.Player()
@@ -29,6 +30,9 @@ class GameView(arcade.Window):
 
     def on_key_press(self, symbol: int, modifiers: int):
         self.player.on_key_press(symbol, modifiers)
+
+        if symbol == arcade.key.ESCAPE:
+            self.close()
 
     def on_key_release(self, symbol: int, modifiers: int):
         self.player.on_key_release(symbol, modifiers)

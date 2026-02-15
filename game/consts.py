@@ -1,7 +1,7 @@
 import game.func_common as func_common
 
 WINDOW_PROPORTIONS = 16 / 9
-WINDOW_SCALE = 0.5
+WINDOW_SCALE = 1
 
 phys_w, phys_h, scale = func_common.get_screen_specs()
 
